@@ -1,360 +1,504 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Diri - M Fari Madyan</title>
+    <meta name="description" content="Biodata diri M Fari Madyan" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontak - M Fari Madyan</title>
-  <meta name="description" content="Hubungi M Fari Madyan untuk diskusi teknologi dan kolaborasi" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          animation: {
-            'fade-in': 'fadeIn 0.8s ease-in-out',
-            'slide-up': 'slideUp 0.6s ease-out',
-            'bounce-slow': 'bounce 2s infinite',
-            'pulse-slow': 'pulse 3s infinite',
-            'float': 'float 3s ease-in-out infinite'
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            },
-            slideUp: {
-              '0%': { opacity: '0', transform: 'translateY(50px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' }
-            }
-          }
-        }
-      }
-    }
-  </script>
-</head>
-
-<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
-  <!-- Navigation -->
-  <nav class="bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-purple-100">
-    <div class="container mx-auto px-6 py-4">
-      <div class="flex justify-center space-x-8">
-        <a href="../index.html"
-          class="text-gray-700 hover:text-purple-600 transition-all duration-300 font-medium hover:scale-105">🏠
-          Beranda</a>
-        <a href="../about/index.html"
-          class="text-gray-700 hover:text-purple-600 transition-all duration-300 font-medium hover:scale-105">👤
-          Tentang</a>
-        <a href="index.html" class="text-purple-600 font-semibold border-b-2 border-purple-600">📞 Kontak</a>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container mx-auto px-6 py-12 max-w-6xl">
-    <!-- Hero Section -->
-    <div class="text-center mb-16 animate-fade-in">
-      <div class="relative inline-block">
-        <h1
-          class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text text-transparent mb-4 animate-pulse-slow">
-          Mari Terhubung!
-        </h1>
-        <div class="absolute -top-2 -right-2 text-4xl animate-bounce-slow">💬</div>
-      </div>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-        Punya pertanyaan atau ingin diskusi tentang teknologi? Jangan ragu untuk menghubungi saya! 🚀
-      </p>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-12">
-      <!-- Contact Info Section -->
-      <div class="space-y-8">
-        <!-- Contact Methods -->
-        <div
-          class="bg-white rounded-3xl shadow-2xl p-8 animate-slide-up border border-purple-100 hover:shadow-purple-200/50 transition-all duration-500">
-          <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
-            <span class="text-4xl animate-float">📱</span>
-            Cara Menghubungi Saya
-          </h2>
-
-          <div class="space-y-6">
-            <!-- Telegram -->
-            <div
-              class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl hover:scale-105 transition-transform cursor-pointer group">
-              <div
-                class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-2xl text-white group-hover:rotate-12 transition-transform">
-                📱
-              </div>
-              <div>
-                <h3 class="font-bold text-gray-800">Telegram</h3>
-                <a href="https://t.me/mfarim" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
-                  @mfarimadyan
-                </a>
-                <p class="text-sm text-gray-600">Chat cepat dan mudah</p>
-              </div>
-            </div>
-
-            <!-- Email -->
-            <div
-              class="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl hover:scale-105 transition-transform cursor-pointer group">
-              <div
-                class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-2xl text-white group-hover:rotate-12 transition-transform">
-                ✉️
-              </div>
-              <div>
-                <h3 class="font-bold text-gray-800">Email</h3>
-                <a href="mailto:hello@mfarim.com" target="_blank"
-                  class="text-purple-600 hover:text-purple-800 hover:underline">
-                  hello@mfarim.com
-                </a>
-                <p class="text-sm text-gray-600">Untuk diskusi mendalam</p>
-              </div>
-            </div>
-
-            <!-- WhatsApp -->
-            <div
-              class="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl hover:scale-105 transition-transform cursor-pointer group">
-              <div
-                class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-2xl text-white group-hover:rotate-12 transition-transform">
-                �
-              </div>
-              <div>
-                <h3 class="font-bold text-gray-800">WhatsApp</h3>
-                <a href="https://wa.me/6281215869294" target="_blank"
-                  class="text-green-600 hover:text-green-800 hover:underline">
-                  +62 812-1586-9294
-                </a>
-                <p class="text-sm text-gray-600">Chat langsung via WhatsApp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Social Media -->
-        <div
-          class="bg-white rounded-3xl shadow-2xl p-8 border border-purple-100 hover:shadow-purple-200/50 transition-all duration-500">
-          <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-            <span class="text-3xl animate-float">🌐</span>
-            Media Sosial
-          </h3>
-          <div class="grid grid-cols-2 gap-4">
-            <a href="https://www.facebook.com/mfarim.fw" target="_blank"
-              class="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:scale-105 transition-transform">
-              <span class="text-2xl">📘</span>
-              <span class="font-medium">Facebook</span>
-            </a>
-            <a href="https://www.instagram.com/mfarim.fw" target="_blank"
-              class="flex items-center gap-3 p-4 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl hover:scale-105 transition-transform">
-              <span class="text-2xl">📷</span>
-              <span class="font-medium">Instagram</span>
-            </a>
-            <a href="https://github.com/mfarim" target="_blank"
-              class="flex items-center gap-3 p-4 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-xl hover:scale-105 transition-transform">
-              <span class="text-2xl">💻</span>
-              <span class="font-medium">GitHub</span>
-            </a>
-            <a href="https://twitter.com/FariMsenju" target="_blank"
-              class="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-xl hover:scale-105 transition-transform">
-              <span class="text-2xl">🐦</span>
-              <span class="font-medium">Twitter</span>
-            </a>
-          </div>
+  <body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-purple-100">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-center space-x-8">
+          <a href="index.html" class="text-purple-600 font-semibold border-b-2 border-purple-600">🏠 Beranda</a>
+          <a href="about/index.html" class="text-gray-700 hover:text-purple-600 transition-all duration-300 font-medium hover:scale-105">👤 Tentang</a>
+          <a href="contact/index.html" class="text-gray-700 hover:text-purple-600 transition-all duration-300 font-medium hover:scale-105">📞 Kontak</a>
         </div>
       </div>
+    </nav>
 
-      <!-- Contact Form -->
-      <div
-        class="bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 rounded-3xl p-1 shadow-2xl animate-slide-up">
-        <div class="bg-white rounded-3xl p-8 h-full">
-          <h2
-            class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent flex items-center justify-center gap-3">
-            <span class="text-4xl animate-float">💌</span>
-            Kirim Pesan
+    <main class="flex-grow max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-8">
+      <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Biodata Diri</h1>
+        <p class="text-lg text-gray-600">M Fari</p>
+      </header>
+
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Data Pribadi</h2>
+        <table class="w-full border-collapse border border-gray-300">
+          <tbody>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 p-3 font-medium"><strong>Nama</strong></td>
+              <td class="border border-gray-300 p-3">M Fari Madyan</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-medium"><strong>Tempat, Tanggal Lahir</strong></td>
+              <td class="border border-gray-300 p-3">Jakarta, 15 Mei 1992</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-gray-300 p-3 font-medium"><strong>Jenis Kelamin</strong></td>
+              <td class="border border-gray-300 p-3">Laki-laki</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-3 font-medium"><strong>Alamat</strong></td>
+              <td class="border border-gray-300 p-3">Jl. Merdeka No. 123, Jakarta Pusat</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Hobi</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-600">
+          <li>Coding dan Pemrograman</li>
+          <li>Membaca Buku Teknologi</li>
+          <li>Bermain Game</li>
+          <li>Mendengarkan Musik</li>
+        </ul>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Cita-cita</h2>
+        <p class="text-gray-600 leading-relaxed">Menjadi seorang Software Engineer yang handal dan berkontribusi dalam pengembangan teknologi untuk kemajuan bangsa.</p>
+      </section>
+    </main>
+
+    <!-- Guest Form Section -->
+    <div class="max-w-4xl mx-auto p-6 mb-8">
+      <div class="bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 rounded-3xl p-1 shadow-2xl">
+        <div class="bg-white rounded-3xl p-8">
+          <h2 class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <span class="text-4xl">📝</span>
+            Buku Tamu Digital
           </h2>
-
-          <form id="contact-form" class="space-y-6">
-            <!-- Personal Info -->
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-700 border-b border-purple-200 pb-2">
-                📝 Info Anda
-              </h3>
-
-              <div class="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label for="person-name" class="block text-sm font-medium text-gray-700 mb-2">
-                    Nama Lengkap
-                  </label>
-                  <input type="text" name="person-name" id="person-name" placeholder="Elon Musk"
-                    class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
-                    required />
-                </div>
-
-                <div>
-                  <label for="person-email" class="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <input type="email" name="person-email" id="person-email" placeholder="elon@spacex.com"
-                    class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
-                    required />
-                </div>
-              </div>
-            </div>
-
-            <!-- Message Info -->
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-700 border-b border-purple-200 pb-2">
-                💭 Pesan Anda
-              </h3>
-
+          
+          <form id="guestForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label for="message-subject" class="block text-sm font-medium text-gray-700 mb-2">
-                  Subjek
+                <label for="guestName" class="block text-sm font-medium text-gray-700 mb-2">
+                  Nama Lengkap *
                 </label>
-                <input type="text" name="message-subject" id="message-subject" placeholder="Diskusi tentang teknologi"
+                <input
+                  type="text"
+                  id="guestName"
+                  name="guestName"
+                  placeholder="Masukkan nama lengkap"
                   class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
-                  required />
+                  required
+                />
               </div>
-
+              
               <div>
-                <label for="message-content" class="block text-sm font-medium text-gray-700 mb-2">
-                  Pesan
+                <label for="guestEmail" class="block text-sm font-medium text-gray-700 mb-2">
+                  Email
                 </label>
-                <textarea name="message-content" id="message-content" rows="6"
-                  placeholder="Halo Fari! Saya ingin diskusi tentang..."
-                  class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 resize-none"
-                  required></textarea>
+                <input
+                  type="email"
+                  id="guestEmail"
+                  name="guestEmail"
+                  placeholder="nama@email.com"
+                  class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
+                />
               </div>
             </div>
 
-            <!-- Submit Button -->
-            <button type="submit"
-              class="w-full bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:scale-105 hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3">
-              <span class="text-xl">�</span>
-              Kirim via WhatsApp
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="guestSchool" class="block text-sm font-medium text-gray-700 mb-2">
+                  Asal Sekolah/Instansi
+                </label>
+                <input
+                  type="text"
+                  id="guestSchool"
+                  name="guestSchool"
+                  placeholder="Nama sekolah atau instansi"
+                  class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
+                />
+              </div>
+              
+              <div>
+                <label for="guestCity" class="block text-sm font-medium text-gray-700 mb-2">
+                  Asal Kota
+                </label>
+                <input
+                  type="text"
+                  id="guestCity"
+                  name="guestCity"
+                  placeholder="Kota asal"
+                  class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="guestMessage" class="block text-sm font-medium text-gray-700 mb-2">
+                Pesan/Kesan
+              </label>
+              <textarea
+                id="guestMessage"
+                name="guestMessage"
+                rows="4"
+                placeholder="Tulis kesan atau pesan Anda setelah melihat biodata ini..."
+                class="w-full px-4 py-3 border border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 text-white font-bold py-4 px-6 rounded-xl hover:scale-105 hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3"
+            >
+              <span class="text-xl">✨</span>
+              Kirim Data Pengunjung
             </button>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- Fun Contact Facts -->
-    <div class="mt-16 bg-white rounded-3xl shadow-2xl p-8 border border-purple-100">
-      <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">
-        <span class="text-4xl animate-bounce-slow">⚡</span>
-        Response Time
-      </h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div
-          class="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl hover:scale-105 transition-transform">
-          <div class="text-4xl mb-3 animate-pulse">📱</div>
-          <h4 class="font-bold text-gray-800 mb-2">Telegram</h4>
-          <p class="text-sm text-gray-600">Biasanya reply dalam 30 menit</p>
-        </div>
-        <div
-          class="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl hover:scale-105 transition-transform">
-          <div class="text-4xl mb-3 animate-pulse">📧</div>
-          <h4 class="font-bold text-gray-800 mb-2">Email</h4>
-          <p class="text-sm text-gray-600">Reply dalam 24 jam</p>
-        </div>
-        <div
-          class="text-center p-6 bg-gradient-to-br from-pink-50 to-red-50 rounded-xl hover:scale-105 transition-transform">
-          <div class="text-4xl mb-3 animate-pulse">�</div>
-          <h4 class="font-bold text-gray-800 mb-2">WhatsApp</h4>
-          <p class="text-sm text-gray-600">Reply dalam 1 jam</p>
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-20 right-4 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🎉</span>
+        <div>
+          <p class="font-semibold">Data Berhasil Dikirim!</p>
+          <p class="text-sm">Terima kasih sudah mengisi buku tamu digital.</p>
         </div>
       </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 text-white text-center py-8 mt-16">
-    <div class="container mx-auto px-6">
-      <p class="text-lg mb-4">💬 Saya sangat senang mendengar dari Anda!</p>
-      <p class="text-purple-200">Hak Cipta © 2025 M Fari Madyan. Seluruh hak dilindungi.</p>
+    <!-- Modal Data Pengunjung -->
+    <div id="dataModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+      <div class="bg-white rounded-3xl p-8 max-w-2xl w-full mx-4 transform scale-90 transition-transform duration-300">
+        <div class="text-center mb-6">
+          <h3 class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <span class="text-4xl">📋</span>
+            Data Pengunjung Tersimpan
+          </h3>
+        </div>
+        
+        <div id="modalContent" class="space-y-4">
+          <!-- Data akan diisi via JavaScript -->
+        </div>
+        
+        <div class="flex gap-4 mt-8">
+          <button
+            id="closeModal"
+            class="flex-1 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300"
+          >
+            Tutup
+          </button>
+          <button
+            id="viewAllData"
+            class="flex-1 bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 hover:scale-105 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300"
+          >
+            Lihat Semua Data
+          </button>
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Form submission handler
-      const contactForm = document.getElementById('contact-form');
-      contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+    <!-- Modal Semua Data -->
+    <div id="allDataModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+      <div class="bg-white rounded-3xl p-8 max-w-4xl w-full mx-4 max-h-[80vh] overflow-hidden transform scale-90 transition-transform duration-300">
+        <div class="text-center mb-6">
+          <h3 class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <span class="text-4xl">📚</span>
+            Semua Data Pengunjung
+          </h3>
+          <p class="text-gray-600 mt-2">Total: <span id="totalVisitors">0</span> pengunjung</p>
+        </div>
+        
+        <div id="allDataContent" class="overflow-y-auto max-h-96 space-y-4">
+          <!-- Data akan diisi via JavaScript -->
+        </div>
+        
+        <div class="flex gap-4 mt-6">
+          <button
+            id="closeAllDataModal"
+            class="flex-1 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300"
+          >
+            Tutup
+          </button>
+          <button
+            id="clearAllData"
+            class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300"
+          >
+            🗑️ Hapus Semua
+          </button>
+        </div>
+      </div>
+    </div>
 
-        // Get form data
-        const name = document.getElementById('person-name').value;
-        const email = document.getElementById('person-email').value;
-        const subject = document.getElementById('message-subject').value;
-        const message = document.getElementById('message-content').value;
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 text-white text-center py-8 mt-16">
+      <div class="container mx-auto px-6">
+        <p class="text-lg mb-4">✨ Terima kasih sudah mengunjungi biodata saya! ✨</p>
+        <p class="text-purple-200">Hak Cipta © 2025 M Fari Madyan. Seluruh hak dilindungi.</p>
+      </div>
+    </footer>
 
-        // Create WhatsApp message
-        const whatsappMessage = `Halo Fari! 👋
-
-*Nama:* ${name}
-*Email:* ${email}
-*Subjek:* ${subject}
-
-*Pesan:*
-${message}
-
-Terima kasih! 😊`;
-
-        // Encode message for URL
-        const encodedMessage = encodeURIComponent(whatsappMessage);
-        const whatsappURL = `https://wa.me/6281215869294?text=${encodedMessage}`;
-
-        // Show loading state
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-
-        submitBtn.innerHTML = '<span class="text-xl">⏳</span> Membuka WhatsApp...';
-        submitBtn.disabled = true;
-
-        // Open WhatsApp after a short delay
-        setTimeout(() => {
-          window.open(whatsappURL, '_blank');
-
-          // Show success message
-          submitBtn.innerHTML = '<span class="text-xl">✅</span> Dibuka di WhatsApp!';
-          submitBtn.classList.add('bg-green-500');
-
-          // Reset after 3 seconds
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const guestForm = document.getElementById('guestForm');
+        const toast = document.getElementById('toast');
+        
+        // Guest form submission handler
+        guestForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Get form data
+          const formData = {
+            name: document.getElementById('guestName').value,
+            email: document.getElementById('guestEmail').value,
+            school: document.getElementById('guestSchool').value,
+            city: document.getElementById('guestCity').value,
+            message: document.getElementById('guestMessage').value,
+            timestamp: new Date().toLocaleString('id-ID')
+          };
+          
+          // Validate required fields
+          if (!formData.name.trim()) {
+            showErrorToast('Nama wajib diisi!');
+            return;
+          }
+          
+          // Show loading state
+          const submitBtn = guestForm.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+          
+          submitBtn.innerHTML = '<span class="text-xl">⏳</span> Menyimpan Data...';
+          submitBtn.disabled = true;
+          
+          // Simulate API call (replace with actual API endpoint)
           setTimeout(() => {
+            // Store data in localStorage for demo purposes
+            let guestData = JSON.parse(localStorage.getItem('guestbook') || '[]');
+            guestData.push(formData);
+            localStorage.setItem('guestbook', JSON.stringify(guestData));
+            
+            // Show success toast
+            showSuccessToast();
+            
+            // Show modal with data
+            showDataModal(formData);
+            
+            // Reset form
+            guestForm.reset();
+            
+            // Reset button
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-            submitBtn.classList.remove('bg-green-500');
-            contactForm.reset();
+            
+            console.log('Data pengunjung tersimpan:', formData);
+          }, 1500);
+        });
+        
+        // Show success toast function
+        function showSuccessToast() {
+          toast.classList.remove('translate-x-full');
+          toast.classList.add('translate-x-0');
+          
+          // Auto hide after 4 seconds
+          setTimeout(() => {
+            toast.classList.remove('translate-x-0');
+            toast.classList.add('translate-x-full');
+          }, 4000);
+        }
+        
+        // Show error toast function
+        function showErrorToast(message) {
+          const errorToast = toast.cloneNode(true);
+          errorToast.id = 'errorToast';
+          errorToast.classList.remove('bg-green-500');
+          errorToast.classList.add('bg-red-500');
+          errorToast.innerHTML = `
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">❌</span>
+              <div>
+                <p class="font-semibold">Error!</p>
+                <p class="text-sm">${message}</p>
+              </div>
+            </div>
+          `;
+          
+          document.body.appendChild(errorToast);
+          
+          setTimeout(() => {
+            errorToast.classList.remove('translate-x-full');
+            errorToast.classList.add('translate-x-0');
+          }, 100);
+          
+          setTimeout(() => {
+            errorToast.classList.remove('translate-x-0');
+            errorToast.classList.add('translate-x-full');
+            setTimeout(() => errorToast.remove(), 300);
           }, 3000);
-        }, 1000);
+        }
+        
+        // Add floating animation to form inputs
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+          input.addEventListener('focus', () => {
+            input.parentElement.classList.add('transform', 'scale-105');
+          });
+          
+          input.addEventListener('blur', () => {
+            input.parentElement.classList.remove('transform', 'scale-105');
+          });
+        });
+        
+        // Modal functions
+        function showDataModal(data) {
+          const modal = document.getElementById('dataModal');
+          const modalContent = document.getElementById('modalContent');
+          
+          modalContent.innerHTML = `
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">👤</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Nama</p>
+                  <p class="text-gray-600">${data.name}</p>
+                </div>
+              </div>
+              
+              ${data.email ? `
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">📧</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Email</p>
+                  <p class="text-gray-600">${data.email}</p>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${data.school ? `
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🏫</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Sekolah/Instansi</p>
+                  <p class="text-gray-600">${data.school}</p>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${data.city ? `
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🌍</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Kota</p>
+                  <p class="text-gray-600">${data.city}</p>
+                </div>
+              </div>
+              ` : ''}
+              
+              ${data.message ? `
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">💬</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Pesan</p>
+                  <p class="text-gray-600">${data.message}</p>
+                </div>
+              </div>
+              ` : ''}
+              
+              <div class="flex items-center gap-3 pt-2 border-t border-purple-200">
+                <span class="text-2xl">⏰</span>
+                <div>
+                  <p class="font-semibold text-gray-800">Waktu Kunjungan</p>
+                  <p class="text-gray-600">${data.timestamp}</p>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          modal.classList.remove('opacity-0', 'invisible');
+          modal.querySelector('.bg-white').classList.remove('scale-90');
+          modal.querySelector('.bg-white').classList.add('scale-100');
+        }
+        
+        function showAllDataModal() {
+          const modal = document.getElementById('allDataModal');
+          const content = document.getElementById('allDataContent');
+          const totalSpan = document.getElementById('totalVisitors');
+          const guestData = JSON.parse(localStorage.getItem('guestbook') || '[]');
+          
+          totalSpan.textContent = guestData.length;
+          
+          if (guestData.length === 0) {
+            content.innerHTML = `
+              <div class="text-center py-8 text-gray-500">
+                <span class="text-6xl mb-4 block">📝</span>
+                <p class="text-lg">Belum ada data pengunjung</p>
+              </div>
+            `;
+          } else {
+            content.innerHTML = guestData.map((data, index) => `
+              <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200">
+                <div class="flex justify-between items-start mb-3">
+                  <h4 class="font-bold text-lg text-gray-800">#${index + 1} ${data.name}</h4>
+                  <span class="text-sm text-gray-500">${data.timestamp}</span>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                  ${data.email ? `<p><strong>Email:</strong> ${data.email}</p>` : ''}
+                  ${data.school ? `<p><strong>Sekolah:</strong> ${data.school}</p>` : ''}
+                  ${data.city ? `<p><strong>Kota:</strong> ${data.city}</p>` : ''}
+                </div>
+                
+                ${data.message ? `
+                <div class="mt-3 pt-3 border-t border-purple-200">
+                  <p class="text-sm"><strong>Pesan:</strong></p>
+                  <p class="text-sm text-gray-600 italic">"${data.message}"</p>
+                </div>
+                ` : ''}
+              </div>
+            `).join('');
+          }
+          
+          modal.classList.remove('opacity-0', 'invisible');
+          modal.querySelector('.bg-white').classList.remove('scale-90');
+          modal.querySelector('.bg-white').classList.add('scale-100');
+        }
+        
+        function closeModal(modalId) {
+          const modal = document.getElementById(modalId);
+          modal.classList.add('opacity-0', 'invisible');
+          modal.querySelector('.bg-white').classList.remove('scale-100');
+          modal.querySelector('.bg-white').classList.add('scale-90');
+        }
+        
+        // Modal event listeners
+        document.getElementById('closeModal').addEventListener('click', () => closeModal('dataModal'));
+        document.getElementById('viewAllData').addEventListener('click', () => {
+          closeModal('dataModal');
+          setTimeout(() => showAllDataModal(), 300);
+        });
+        document.getElementById('closeAllDataModal').addEventListener('click', () => closeModal('allDataModal'));
+        
+        // Clear all data
+        document.getElementById('clearAllData').addEventListener('click', () => {
+          if (confirm('Apakah Anda yakin ingin menghapus semua data pengunjung?')) {
+            localStorage.removeItem('guestbook');
+            showSuccessToast('Semua data berhasil dihapus!');
+            closeModal('allDataModal');
+          }
+        });
+        
+        // Close modal on backdrop click
+        document.getElementById('dataModal').addEventListener('click', (e) => {
+          if (e.target.id === 'dataModal') closeModal('dataModal');
+        });
+        document.getElementById('allDataModal').addEventListener('click', (e) => {
+          if (e.target.id === 'allDataModal') closeModal('allDataModal');
+        });
+        
+        // Console log for viewing stored data
+        console.log('Data pengunjung yang tersimpan:', JSON.parse(localStorage.getItem('guestbook') || '[]'));
       });
-
-      // Floating animation for contact cards
-      const contactCards = document.querySelectorAll('.hover\\:scale-105');
-      contactCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-          card.style.transform = 'scale(1.05) translateY(-5px)';
-        });
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = 'scale(1) translateY(0)';
-        });
-      });
-
-      // Interactive emoji animation
-      const emojis = document.querySelectorAll('.text-2xl, .text-3xl, .text-4xl');
-      emojis.forEach(emoji => {
-        emoji.addEventListener('mouseenter', () => {
-          emoji.style.transform = 'scale(1.2) rotate(10deg)';
-          emoji.style.transition = 'transform 0.3s ease';
-        });
-        emoji.addEventListener('mouseleave', () => {
-          emoji.style.transform = 'scale(1) rotate(0deg)';
-        });
-      });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
